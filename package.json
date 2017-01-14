@@ -1,7 +1,7 @@
 {
   "name": "ngstorage",
-  "version": "0.3.10",
-  "author": "Gias Kay Lee",
+  "version": "0.3.10-chrome",
+  "authors": "Gias Kay Lee, SuperNET",
   "licenses": [
     {
       "type": "MIT",
