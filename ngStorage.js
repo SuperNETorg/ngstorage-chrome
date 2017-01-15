@@ -57,12 +57,15 @@
               isChromeApp = false;
 
           // chrome app env check
-          if (chrome)
-            try {
-              chrome.storage.local.set({ 'ngStorageTestVal': 'it is working' });
-              isChromeApp = true;
-            }
-            catch (err) {}
+          try {
+            if (chrome)
+              try {
+                chrome.storage.local.set({ 'ngStorageTestVal': 'it is working' });
+                isChromeApp = true;
+              }
+              catch (err) {}
+          }
+          catch (err) {}
 
           this.setSerializer = function (s) {
             if (typeof s !== 'function') {
